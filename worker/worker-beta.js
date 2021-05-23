@@ -9,44 +9,59 @@ A Script Redesigned by Parveen Bhadoo from GOIndex at https://github.com/Parveen
 
 // add multiple serviceaccounts as {}, {}, {}, random account will be selected by each time app is opened.
 const serviceaccounts = [
-{  "type": "service_account",
-  "project_id": "saf-i730oxtxjv-0pbb9xkdo3j0re5",
-  "private_key_id": "4a29e981ccea257ccb41d1dc48bd8f3b8f2902e9",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrPOvXdOfSAyEX\n9+r+hvWu2Wq2OIsZjVTFwD1T0tge94uc2r8mh23kw1cflksv5gGvuPGSgcUecFXz\nW9WV5+RrATnDg4+cXJxjwokpp6YZ7rZK9Koex8IBnazTD6SQizEP4Mk3Ktbt9gXk\ndS1KAgt3388K3abxd28nV5EokzFjTFFskCxSF4motvGioR3yQLJUM8luHbWDHCA8\nQUPQQY6tCV8Bvjf05um2b9FjDFY8c/Sz0+3ScucmyoR8oyBW5fEh4eZPSuq0y40c\nZ+r8ip3KPnGFuJ+M5Zu2SnF5sG3LWVaDAZPmmt/zVxE70vVv8MUwhcsVxsnxY6vY\nV40+D/FhAgMBAAECggEACtg4XXRPbCr7kQ+H5+e3LoQhcHnjQVKEkGOM3r6nJkrq\nIhxuZ6vDB25hmaQEjfuEltLhJbSnPbbCkr95pt1BR4+Tz3CJC0+ILf83fZZa/CB0\nlgmprnpbLIwGUnWWp/rQuB81zxMc+oQOunm7TQkVHdnkPF1uQbOdLAItNMMhqRak\n9+C/YhUG8blLcnSA9XqUN/ckVRbxD//4UNFZzKz8gPMSciCvQgehM5SSfh8aNk+2\nqKYw4j+XuQyi2wjQ3KT/ak3Mm8ub1U31UGWhIcGLJxRlBorQZ2dor8Qi37kRE4R3\nBblDVxXQqkwPkmHPJkEmpCd3yZkc8YqW4e+kDjopQwKBgQDwzmkJJJyhhoHFmlMB\nu6cADH5ndAKlkraXPNMksnWO6182ZaYrRmz4cKpan0/dusByedvuBsGitY6EpnGj\nNTakpv/UNbnq6p2kNgMSk/HPv5HqOI/fOI1KilPucRBLR7Nz2EJvwNIGjN9nr/Md\nFM1tskZ3F4d4Rg5NygowD2KoEwKBgQC2CtGKkAyXePHmcVkYLKMHVUldJtZPsC+7\nN8OSLXIfCCjS1RPcxjrUjEEAynv25JPmXwwayLu5SPdq9pB7ONK61ie+Leg8lIAX\nE2xeUkn7/DUMmCPprAifL22LVpeDGU9wfKeTZUYavhmMOK0kjo9hKHHY2KjxOWD/\np3NUABCXOwKBgC0VmBi8IA8lzbofUJcsePHLZQcdczlopILgQm/GcbgWXTckBN5p\nSxGglmRtG1jaFBnastB3t10tPMedGf2Cgv6EvbUPcgWHc4hBDIY36LgKl9kQSe9y\n+RERoPEtfe16OSDhRl8B7NCJI3KYQJ4bPPLiw8qcPyLHivoJb6rb1o69AoGAabr+\n2SuxJIjqdp1+0bubNLckVSYpcz8xedt5i305uyxSCaIYVzILGUgcuQjh1xQLktHB\nhgzwez0V9toeMHNgcYPQsXSYXhciDkUJu/6vWduyNA5pTV7N4yb4yOUSOuKIcRz1\nd3ZqsT2YOQjyBzmFrTiAZyHvfauF2va21SL0f+ECgYEApTxS29MFTce28gcT6Zui\nt3M5gy8ykUdkTHmtDwu5QtnQQwPoQY932ZySS/ufRRmirRDBfPOgxha684MeQ4cf\n/PiNzq46QnXaVJk1f9SztMdyjnIk1aCsz3Tury3CwD8XIePeew176moaHp0Ld8gn\njdMZ+aIBcYDY2DPgwqsJDxE=\n-----END PRIVATE KEY-----\n",
-  "client_email": "mfc-9c0uzeuyq5lcvmptr0yuc7fgcq@saf-i730oxtxjv-0pbb9xkdo3j0re5.iam.gserviceaccount.com",
-  "client_id": "107383495949491379744",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mfc-9c0uzeuyq5lcvmptr0yuc7fgcq%40saf-i730oxtxjv-0pbb9xkdo3j0re5.iam.gserviceaccount.com"}
+{} 
 ];
 const randomserviceaccount = serviceaccounts[Math.floor(Math.random()*serviceaccounts.length)];
 
 const authConfig = {
-    "siteName": "WarLock Drive Index", // Website name
+    "siteName": "WarLock Projects", // Website name
     "client_id": "945421514686-0oo8nmje3l3p747rt41netpf9h328luj.apps.googleusercontent.com", // Client id from Google Cloud Console
     "client_secret": "70urT5k8dga8VdiPygYzz6Do", // Client Secret from Google Cloud Console
-    "refresh_token": "", // Authorize token
-    "service_account": true, // true if you're using Service Account instead of user account
+    "refresh_token": "1//0g2LUa4Vb_7wMCgYIARAAGBASNwF-L9IrIfUud3Zfv5tyEp2yMnbN7Qb0u-9B2lXzp1zrQJsxsBzJjg4E1j40yasv_xvXEkKJTD8", // Authorize token
+    "service_account": false, // true if you're using Service Account instead of user account
     "service_account_json": randomserviceaccount, // don't touch this one
     "files_list_page_size": 50,
     "search_result_list_page_size": 50,
     "enable_cors_file_down": false,
     "enable_password_file_verify": true, // support for .password file
-    "roots":[
-      {
-          "id": "root",
-          "name": "Drive One",
-          "protect_file_link": false,
-         // "auth": {"username":"password"} /* Remove double slash before "auth" to activate id password protection */
-      },
-      {
-          "id": "root",
-          "name": "Drive Two",
-          "protect_file_link": false,
-         // "auth": {"username":"password", "username1":"password1"} /* Remove double slash before "auth" to activate id password protection */
-      },
-    ]};
+    "roots": 
+	    [{
+            "id": "0AD9mdhGkpoNWUk9PVA",
+            "name": "Full-01",
+            "user": "warlockprojects",
+            "pass": "warlockprojects",
+            "protect_file_link": false
+             },
+             {
+            "id": "0ACDq2JPuyZCjUk9PVA",
+            "name": "Full-02",
+            "user": "warlockprojects",
+            "pass": "warlockprojects",
+            "protect_file_link": false
+            },
+            {
+            "id": "0AFOWrcG9TP8NUk9PVA",
+            "name": "Bot-01",
+            "user": "warlockprojects",
+            "pass": "warlockprojects",
+            "protect_file_link": false
+            },
+            {
+            "id": "0AGUpuZDyIPhIUk9PVA",
+            "name": "Bot-02",
+            "user": "warlockprojects",
+            "pass": "warlockprojects",
+            "protect_file_link": false
+            },
+            {
+            "id": "0APPxoGY9Djw1Uk9PVA",
+            "name": "Bot-03",
+            "user": "warlockprojects",
+            "pass": "warlockprojects",
+            "protect_file_link": false
+            }
+            ],
+    };
 
 
 /*
@@ -65,7 +80,7 @@ const authConfig = {
 ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝░╚═════╝░╚══════╝╚═════╝░*/
 
 const uiConfig = {
-    "theme": "dark", // switch between themes, default set to vapor, select from https://github.com/ParveenBhadooOfficial/Google-Drive-Index#themes
+    "theme": "darkly", // switch between themes, default set to vapor, select from https://github.com/ParveenBhadooOfficial/Google-Drive-Index#themes
     "version": "2.0.18", // don't touch this one. get latest code using generator at https://generator.driveindex.ga
     // If you're using Image then set to true, If you want text then set it to false
     "logo_image": true, // true if you're using image link in next option.
@@ -87,7 +102,7 @@ const uiConfig = {
     "path_nav_alert_class": "alert alert-primary", // https://getbootstrap.com/docs/4.0/components/alerts/#examples
     "file_view_alert_class": "alert alert-danger", // https://getbootstrap.com/docs/4.0/components/alerts/#examples
     "file_count_alert_class": "alert alert-secondary", // https://getbootstrap.com/docs/4.0/components/alerts/#examples
-    "contact_link": "https://telegram.dog/Telegram", // Link to Contact Button on Menu
+    "contact_link": "https://telegram.dog/warlockprojects", // Link to Contact Button on Menu
     "copyright_year": "2020", // year of copyright, can be anything like 2015 - 2020 or just 2020
     "company_name": "WarLock Projects", // Name next to copyright
     "company_link": "https://telegram.dog/warlockprojects", // link of copyright name
@@ -159,7 +174,7 @@ function html(current_drive_order = 0, model = {}) {
       color: ${uiConfig.css_p_tag_color};
   }
   </style>
-  <script src="${uiConfig.jsdelivr_cdn_src}@${uiConfig.version}/js/app.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/WarLock-Projects/Drive-Index@master/js/app.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/WarLock-Projects/Drive-Index@master/js/update.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/mozilla/pdf.js@gh-pages/build/pdf.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
