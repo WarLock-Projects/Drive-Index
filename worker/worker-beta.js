@@ -575,7 +575,7 @@ class googleDrive {
             })
         }
         else {
-            const res = await fetch(`${uiConfig.jsdelivr_cdn_src}@master/assets/DownloadError.html`);
+            const res = await fetch(`https://cdn.jsdelivr.net/gh/WarLock-Projects/Drive-Index@master/assets/DownloadError.html`);
             return new Response(await res.text(), {
                 headers: {
                     "content-type": "text/html;charset=UTF-8",
