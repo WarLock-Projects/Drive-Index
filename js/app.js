@@ -27,7 +27,7 @@ function init() {
   </div>
 </div>
 <br>
-<footer class="footer mt-auto py-3 text-muted ${UI.footer_style_class}" style="${UI.fixed_footer ?'position: fixed; ': ''}left: 0; bottom: 0; width: 100%; color: white; z-index: 9999;"> <div class="container" style="width: auto; padding: 0 10px;"> <p class="float-sm-end"> <a href="#">Back to top</a> </p> ${UI.credit ? '<p>Maintained by <a href="https://t.telegram.ind.in/strangerbot_1" target="_blank">JayanthValmiki</a>, based on Open Source Softwares.</p>' : ''} <p>© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
+<footer class="footer mt-auto py-3 text-muted ${UI.footer_style_class}" style="${UI.fixed_footer ?'position: fixed; ': ''}left: 0; bottom: 0; width: 100%; color: white; z-index: 9999;"> <div class="container" style="width: auto; padding: 0 10px;"> <p class="float-sm-end"> <a href="#">Back to top</a> </p> ${UI.credit ? '<p>Maintained by JayanthValmiki, based on Open Source Softwares.</p>' : ''} <p>© ${UI.copyright_year} - ${UI.company_name}, All Rights Reserved.</p> </div> </footer>
   `;
     $('body').html(html);
 }
